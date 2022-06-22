@@ -1,0 +1,26 @@
+{
+  "name": "hospitalcrud---backend",
+  "version": "1.0.0",
+  "description": "Backend in node",
+  "main": "src/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanDa15/HospitalCRUD-BACKEND.git"
+  },
+  "keywords": [
+    "backend",
+    "node",
+    "js",
+    "mongo",
+    "db"
+  ],
+  "author": "Juan David Osorio Ortiz <jdoo1115@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuanDa15/HospitalCRUD-BACKEND/issues"
+  },
+  "homepage": "https://github.com/JuanDa15/HospitalCRUD-BACKEND#readme"
+}
