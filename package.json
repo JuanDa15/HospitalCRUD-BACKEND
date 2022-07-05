@@ -4,7 +4,7 @@
   "description": "Backend in node",
   "main": "src/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/JuanDa15/HospitalCRUD-BACKEND/issues"
   },
-  "homepage": "https://github.com/JuanDa15/HospitalCRUD-BACKEND#readme"
+  "homepage": "https://github.com/JuanDa15/HospitalCRUD-BACKEND#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.2"
+  }
 }
