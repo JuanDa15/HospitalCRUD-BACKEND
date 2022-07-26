@@ -4,7 +4,7 @@ const generateJWT = ( uid ) => {
 
  return new Promise((resolve, reject ) => {
   const payload = {
-    id: uid,
+    uid: uid,
   };
 
   jwt.sign(payload, process.env.JWT_KEY, {

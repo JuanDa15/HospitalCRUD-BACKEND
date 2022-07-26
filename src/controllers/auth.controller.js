@@ -17,7 +17,6 @@ const login = async (req, res= response) => {
     }
 
     // Check password
-
     const validPassword = compareSync(password, user.password);
 
     if (!validPassword) {
@@ -27,10 +26,8 @@ const login = async (req, res= response) => {
         data: 'Something went wrong with login' 
       });
     }
-
     // Generate session token
-    const token = await generateJWT(user.uid);
-
+    const token = await generateJWT(user.id);
 
     res.status(200).json({
       ok: true,

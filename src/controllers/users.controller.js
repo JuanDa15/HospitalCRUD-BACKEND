@@ -6,7 +6,6 @@ const { generateJWT } = require('../helpers/jwt');
 
 const getUsers = async (req, res) => {
   const users =  await User.find({}, 'name email role google uid');
-
   res.json({
     ok: true,
     data: users
@@ -15,7 +14,6 @@ const getUsers = async (req, res) => {
 
 const createUser = async (req, res = response) => {
   const { email, password, name } = req.body;
-  
   try {
     const existEmail = await User.findOne({ email: email});
 
@@ -36,7 +34,7 @@ const createUser = async (req, res = response) => {
     await user.save();
 
     // Generate session token
-    const token = await generateJWT(user.uid);
+    const token = await generateJWT(user.id);
 
     res.json({
       ok: true,
